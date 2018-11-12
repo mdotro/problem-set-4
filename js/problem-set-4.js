@@ -3,9 +3,8 @@
  */
 
 function hello() {
-
-  // WRITE YOUR EXERCISE 1 CODE HERE
-
+var p = document.getElementById("output1");
+p.innerHTML = "Hello, AP Computer Science Principles!"
   ////////////////// DO NOT MODIFY
   check("hello"); // DO NOT MODIFY
   ////////////////// DO NOT MODIFY
@@ -16,13 +15,13 @@ function hello() {
  */
 
 function helloAgain() {
-
   //////////// DO NOT MODIFY      Use the @name variable to store
   let name; // DO NOT MODIFY      the value that the user enters
   //////////// DO NOT MODIFY      in response to your prompt.
 
-  // WRITE YOUR EXERCISE 2 CODE HERE
-
+ name = prompt("Please enter your name");
+ var what = document.getElementById("output2");
+ what.innerHTML = "Hello, " + name + "!";
   ///////////////////////////// DO NOT MODIFY
   check("helloAgain", name); // DO NOT MODIFY
   ///////////////////////////// DO NOT MODIFY
@@ -38,10 +37,10 @@ function celsius() {
   let cels = ((Math.random() * 1001) - 100).toFixed(2); // DO NOT MODIFY
   //////////////////////////////////////////////////////// DO NOT MODIFY
 
-  // The above code generates a random number between -100 and 1000
-  // (inclusive), and rounds this value to 2 decimal places.
+  fahr = ((9 * cels) / 5 + 32).toFixed(2);
+  var fart = document.getElementById("output3")
+fart.innerHTML = (cels + " degrees Celsius equals "  + fahr + " degrees Fahrenheit.");
 
-  // WRITE YOUR EXERCISE 3 CODE HERE
 
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
@@ -58,10 +57,11 @@ function fahrenheit() {
   let fahr = ((Math.random() * 1001) - 100).toFixed(2); // DO NOT MODIFY
   //////////////////////////////////////////////////////// DO NOT MODIFY
 
-  // The above code generates a random number between -100 and 1000
-  // (inclusive), and rounds this value to 2 decimal places.
 
-  // WRITE YOUR EXERCISE 4 CODE HERE
+
+  cels = ((fahr - 32) * 5/9).toFixed(2);
+  var hot = document.getElementbyId("output4")
+  hot.innerHTML = (fahr + " degrees Fahrenheit equals " + cels + " degrees Celsius.");
 
   ///////////////////////////// DO NOT MODIFY
   check("fahrenheit", fahr); // DO NOT MODIFY
